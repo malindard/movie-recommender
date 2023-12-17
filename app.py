@@ -45,7 +45,7 @@ imageUrls = [
 imageCarouselComponent(imageUrls=imageUrls, height=200)
 
 # Dropdown for selecting a movie
-selectvalue = st.selectbox('Select movie from dropdown', movies_list)
+selectvalue = st.selectbox('Select movie from dropdown or type it', movies_list)
 
 # Function to provide movie recommendations based on similarity scores
 def recs(title, cosine_sim=similarity):
